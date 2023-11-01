@@ -19,6 +19,8 @@ module user_proj_solar (
 `ifdef USE_POWER_PINS
     inout vccd1,  // User area 1 1.8V supply
     inout vssd1,  // User area 1 digital ground
+    inout vssa1,	// User area 1 analog ground
+    inout vssa2,	// User area 2 analog ground
 `endif
 
     // Wishbone Slave ports (WB MI A)

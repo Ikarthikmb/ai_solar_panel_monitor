@@ -1,0 +1,182 @@
+library (user_proj_solar) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  type ("analog_io") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 29;
+    bit_from : 28;
+    bit_to : 0;
+  }
+
+  cell ("user_proj_solar") {
+    pin("wb_clk_i") {
+      direction : input;
+      capacitance : 0.3107;
+    }
+    pin("wb_rst_i") {
+      direction : input;
+      capacitance : 0.0090;
+      timing() {
+        related_pin : "wb_clk_i";
+        timing_type : hold_rising;
+	fall_constraint(scalar) {
+          values("5.83464");
+	}
+      }
+      timing() {
+        related_pin : "wb_clk_i";
+        timing_type : setup_rising;
+	fall_constraint(scalar) {
+          values("-4.75469");
+	}
+      }
+    }
+    bus("analog_io") {
+      bus_type : analog_io;
+      direction : inout;
+      capacitance : 0.0000;
+    pin("analog_io[28]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[27]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[26]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[25]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[24]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[23]") {
+      direction : inout;
+      capacitance : 0.0012;
+    }
+    pin("analog_io[22]") {
+      direction : inout;
+      capacitance : 0.0011;
+    }
+    pin("analog_io[21]") {
+      direction : inout;
+      capacitance : 0.0162;
+    }
+    pin("analog_io[20]") {
+      direction : inout;
+      capacitance : 0.0181;
+    }
+    pin("analog_io[19]") {
+      direction : inout;
+      capacitance : 0.0159;
+    }
+    pin("analog_io[18]") {
+      direction : inout;
+      capacitance : 0.0136;
+    }
+    pin("analog_io[17]") {
+      direction : inout;
+      capacitance : 0.0102;
+    }
+    pin("analog_io[16]") {
+      direction : inout;
+      capacitance : 0.0036;
+    }
+    pin("analog_io[15]") {
+      direction : inout;
+      capacitance : 0.0039;
+    }
+    pin("analog_io[14]") {
+      direction : inout;
+      capacitance : 0.0042;
+    }
+    pin("analog_io[13]") {
+      direction : inout;
+      capacitance : 0.0092;
+    }
+    pin("analog_io[12]") {
+      direction : inout;
+      capacitance : 0.0094;
+    }
+    pin("analog_io[11]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[10]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[9]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[8]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[7]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[6]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[5]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[4]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[3]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[2]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[1]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("analog_io[0]") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    }
+  }
+
+}
