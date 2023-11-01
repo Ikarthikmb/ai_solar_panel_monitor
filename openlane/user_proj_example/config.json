@@ -3,9 +3,13 @@
     "DESIGN_IS_CORE": 0,
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/user_proj_example.v"
+        "dir::../../verilog/rtl/user_proj_example.v",
+		"dir::../../verilog/rtl/adc.v",
+		"dir::../../verilog/rtl/ai_solar_panel_monitor.v",
+		"dir::../../verilog/rtl/display.v",
+		"dir::../../verilog/rtl/microcontroller.v"
     ],
-    "CLOCK_PERIOD": 25,
+    "CLOCK_PERIOD": 500,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "counter.clk",
     "FP_SIZING": "absolute",
