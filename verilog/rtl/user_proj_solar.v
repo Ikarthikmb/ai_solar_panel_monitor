@@ -19,16 +19,21 @@ module user_proj_solar (
 `ifdef USE_POWER_PINS
     inout vccd1,  // User area 1 1.8V supply
     inout vssd1,  // User area 1 digital ground
-    inout vssa1,	// User area 1 analog ground
-    inout vssa2,	// User area 2 analog ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
     input wb_clk_i,
     input wb_rst_i,
 
+    // IOs
+    input  [23:0] io_in,
+    output [11:0] io_out,
+    output [11:0] io_oeb,
+
+    output [2:0] irq
+
 	// Analog 
-    inout [`MPRJ_IO_PADS-10:0] analog_io
+    // inout [`MPRJ_IO_PADS-10:0] analog_io
 );
 
     wire [11:0] voltage_display;
@@ -41,8 +46,8 @@ module user_proj_solar (
 ai_solar_panel_monitor solar_monitor (
     .clk(wb_clk_i),     // Use the Wishbone clock for solar_monitor
     .reset(wb_rst_i),   // Use the Wishbone reset for solar_monitor
-    .voltage(analog_io[11:0]),    // Connect analog_io to voltage
-    .current({{7{1'b0}},analog_io[16:12]}),   // Connect analog_io to current
+    .voltage(io_in[11:0]),    // Connect analog_io to voltage
+    .current(io_in[23:12]),   // Connect analog_io to current
     .temperature({12{1'b0}}),  // Connect analog_io to temperature
     .voltage_display(voltage_display),  // Connect display signals
     .current_display(current_display),
@@ -66,8 +71,10 @@ mux_5to1 display_mux (
     .mux(mux5to1_out)
 );
 
-assign analog_io[28:17] = mux5to1_out;
-assign select_signal = 3'b1;
+assign io_out[11:0] = mux5to1_out;
+assign select_signal = 'b1;
+assign io_oeb = {4{select_signal}};
+assign irq = 'b0;
 
 endmodule
 

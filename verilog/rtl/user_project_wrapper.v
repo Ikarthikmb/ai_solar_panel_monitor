@@ -91,8 +91,16 @@ user_proj_solar mprj (
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
 
+    // IOs
+    .io_in(io_in[23:0]),
+    .io_out(io_out[11:0]),
+    .io_oeb(io_oeb[11:0]), 
+
+    // User maskable interrupt signals
+    .irq(user_irq)
+
 	// Analog 
-    .analog_io(analog_io)
+    // .analog_io(analog_io)
 );
 
 endmodule	// user_project_wrapper
