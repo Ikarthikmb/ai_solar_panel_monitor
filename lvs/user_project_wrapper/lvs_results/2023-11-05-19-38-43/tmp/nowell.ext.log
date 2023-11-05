@@ -1,0 +1,150 @@
+BEGIN: Sun 05 Nov 2023 07:39:44 PM UTC
+Extracting as digital. Top ports unique.
+
+Magic 8.3 revision 420 - Compiled on Sat Nov  4 21:03:17 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/Users/karthikmb/mpw_precheck/checks/be_checks//scripts/gds.digital.spice.tcl" from command line.
+Extracting with top ports unique (digital)
+Input style sky130(nowell): scaleFactor=2, multiplier=2
+CIF input style is now "sky130(nowell)"
+Flattening 
+Extracting /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/gds/user_project_wrapper.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_project_wrapper
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "user_proj_solar".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+    130000 uses
+    135000 uses
+    140000 uses
+    145000 uses
+Reading "user_project_wrapper".
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice(nowell)"
+Processing sky130_fd_sc_hd__decap_3
+Processing sky130_fd_sc_hd__decap_8
+Processing sky130_ef_sc_hd__decap_12
+Processing sky130_fd_sc_hd__decap_6
+Processing sky130_fd_sc_hd__decap_4
+Processing sky130_fd_sc_hd__conb_1
+Processing sky130_fd_sc_hd__dlymetal6s2s_1
+Processing sky130_fd_sc_hd__diode_2
+Processing sky130_fd_sc_hd__buf_12
+Processing sky130_fd_sc_hd__dfrtp_1
+Processing sky130_fd_sc_hd__dlygate4sd3_1
+Processing sky130_fd_sc_hd__inv_2
+Processing sky130_fd_sc_hd__buf_1
+Processing sky130_fd_sc_hd__dfrtp_4
+Processing sky130_fd_sc_hd__dfrtp_2
+Processing sky130_fd_sc_hd__clkbuf_1
+Processing sky130_fd_sc_hd__clkbuf_8
+Processing sky130_fd_sc_hd__clkbuf_16
+Processing user_proj_solar
+Processing user_project_wrapper
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+sky130_fd_sc_hd__decap_8: 2 warnings
+Extracting sky130_ef_sc_hd__decap_12 into sky130_ef_sc_hd__decap_12.ext:
+sky130_ef_sc_hd__decap_12: 2 warnings
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+sky130_fd_sc_hd__decap_6: 2 warnings
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+sky130_fd_sc_hd__decap_4: 2 warnings
+Extracting sky130_fd_sc_hd__conb_1 into sky130_fd_sc_hd__conb_1.ext:
+Extracting sky130_fd_sc_hd__dlymetal6s2s_1 into sky130_fd_sc_hd__dlymetal6s2s_1.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+Extracting sky130_fd_sc_hd__buf_12 into sky130_fd_sc_hd__buf_12.ext:
+Extracting sky130_fd_sc_hd__dfrtp_1 into sky130_fd_sc_hd__dfrtp_1.ext:
+Extracting sky130_fd_sc_hd__dlygate4sd3_1 into sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__dfrtp_4 into sky130_fd_sc_hd__dfrtp_4.ext:
+Extracting sky130_fd_sc_hd__dfrtp_2 into sky130_fd_sc_hd__dfrtp_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting user_proj_solar into user_proj_solar.ext:
+Extracting user_project_wrapper into user_project_wrapper.ext:
+Created database crash recovery file /tmp//MAG458.TO99r2
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 28
+Devs merged: 28
+Devs merged: 28
+Devs merged: 30
+Devs merged: 30
+Devs merged: 30
+Devs merged: 30
+Devs merged: 46
+Devs merged: 46
+Devs merged: 46
+Devs merged: 52
+Devs merged: 52
+Devs merged: 54
+Devs merged: 90
+Devs merged: 90
+Devs merged: 90
+exttospice finished.
+Using technology "sky130A", version 1.0.393-0-ge6f9c88
+END: Sun 05 Nov 2023 07:51:36 PM UTC
+Runtime: 0:11:52 (hh:mm:ss)

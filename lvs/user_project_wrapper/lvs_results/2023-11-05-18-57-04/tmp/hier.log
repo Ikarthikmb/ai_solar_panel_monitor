@@ -1,0 +1,9 @@
+BEGIN: Sun 05 Nov 2023 06:57:04 PM UTC
+Creating /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/lvs/user_project_wrapper/lvs_results/2023-11-05-18-57-04/tmp/verilog.cells from the following files...
+	/Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/verilog/gl/user_proj_example.v
+	/Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/verilog/gl/user_project_wrapper.v
+[INFO] Changing from /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/gds/user_project_wrapper.gds
+	to /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/lvs/user_project_wrapper/lvs_results/2023-11-05-18-57-04/tmp/layout.txt
+Hierarchy check for user_project_wrapper passed.
+END: Sun 05 Nov 2023 06:57:38 PM UTC
+Runtime: 0:00:34 (hh:mm:ss)
