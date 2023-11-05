@@ -88,9 +88,6 @@ module user_project_wrapper (user_clock2,
     io_out[3],
     io_out[2],
     io_out[1],
-    io_out[0]}),
-    .irq({user_irq[2],
-    user_irq[1],
-    user_irq[0]}));
+    io_out[0]}));
 endmodule
 

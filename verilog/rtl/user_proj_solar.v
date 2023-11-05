@@ -28,9 +28,7 @@ module user_proj_solar (
     // IOs
     input  [23:0] io_in,
     output [11:0] io_out,
-    output [11:0] io_oeb,
-
-    output [2:0] irq
+    output [11:0] io_oeb
 
 	// Analog 
     // inout [`MPRJ_IO_PADS-10:0] analog_io
@@ -73,8 +71,13 @@ mux_5to1 display_mux (
 
 assign io_out[11:0] = mux5to1_out;
 assign select_signal = 'b1;
-assign io_oeb = {4{select_signal}};
-assign irq = 'b0;
+// assign io_oeb = {4{select_signal}};
+assign io_oeb[8:0] = 9'b0;
+
+// Connect the OEB signals to the correct pins on the FPGA or other device.
+assign io_oeb[11] = select_signal[2];
+assign io_oeb[10] = select_signal[1];
+assign io_oeb[9] = select_signal[0];
 
 endmodule
 

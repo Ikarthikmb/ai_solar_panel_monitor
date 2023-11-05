@@ -415,30 +415,6 @@ MACRO user_proj_solar
         RECT 0.000 2200.520 4.000 2201.120 ;
     END
   END io_out[9]
-  PIN irq[0]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 249.870 0.000 250.150 4.000 ;
-    END
-  END irq[0]
-  PIN irq[1]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 349.690 0.000 349.970 4.000 ;
-    END
-  END irq[1]
-  PIN irq[2]
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 449.510 0.000 449.790 4.000 ;
-    END
-  END irq[2]
   PIN vccd1
     DIRECTION INOUT ;
     USE POWER ;
@@ -482,7 +458,7 @@ MACRO user_proj_solar
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
-        RECT 50.230 0.000 50.510 4.000 ;
+        RECT 124.750 0.000 125.030 4.000 ;
     END
   END wb_clk_i
   PIN wb_rst_i
@@ -491,7 +467,7 @@ MACRO user_proj_solar
     ANTENNAGATEAREA 0.990000 ;
     PORT
       LAYER met2 ;
-        RECT 150.050 0.000 150.330 4.000 ;
+        RECT 374.530 0.000 374.810 4.000 ;
     END
   END wb_rst_i
   OBS
@@ -509,12 +485,9 @@ MACRO user_proj_solar
         RECT 393.030 2995.720 463.490 2996.490 ;
         RECT 464.330 2995.720 492.570 2996.490 ;
         RECT 4.690 4.280 492.570 2995.720 ;
-        RECT 4.690 4.000 49.950 4.280 ;
-        RECT 50.790 4.000 149.770 4.280 ;
-        RECT 150.610 4.000 249.590 4.280 ;
-        RECT 250.430 4.000 349.410 4.280 ;
-        RECT 350.250 4.000 449.230 4.280 ;
-        RECT 450.070 4.000 492.570 4.280 ;
+        RECT 4.690 4.000 124.470 4.280 ;
+        RECT 125.310 4.000 374.250 4.280 ;
+        RECT 375.090 4.000 492.570 4.280 ;
       LAYER met3 ;
         RECT 3.990 2923.680 496.000 2986.725 ;
         RECT 3.990 2922.280 495.600 2923.680 ;

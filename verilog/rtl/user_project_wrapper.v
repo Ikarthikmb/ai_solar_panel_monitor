@@ -94,10 +94,7 @@ user_proj_solar mprj (
     // IOs
     .io_in(io_in[23:0]),
     .io_out(io_out[11:0]),
-    .io_oeb(io_oeb[11:0]), 
-
-    // User maskable interrupt signals
-    .irq(user_irq)
+    .io_oeb(io_oeb[11:0])
 
 	// Analog 
     // .analog_io(analog_io)

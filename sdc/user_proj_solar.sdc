@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Sun Nov  5 03:18:54 2023
+# Sun Nov  5 17:33:02 2023
 ###############################################################################
 current_design user_proj_solar
 ###############################################################################
@@ -40,9 +40,6 @@ set_load -pin_load 0.1900 [get_ports {io_out[3]}]
 set_load -pin_load 0.1900 [get_ports {io_out[2]}]
 set_load -pin_load 0.1900 [get_ports {io_out[1]}]
 set_load -pin_load 0.1900 [get_ports {io_out[0]}]
-set_load -pin_load 0.1900 [get_ports {irq[2]}]
-set_load -pin_load 0.1900 [get_ports {irq[1]}]
-set_load -pin_load 0.1900 [get_ports {irq[0]}]
 set_input_transition 0.6100 [get_ports {wb_clk_i}]
 set_input_transition -min 0.0500 [get_ports {io_in[23]}]
 set_input_transition -max 0.3800 [get_ports {io_in[23]}]

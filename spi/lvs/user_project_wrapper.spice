@@ -7,7 +7,7 @@
 + io_oeb[0] io_oeb[10] io_oeb[11] io_oeb[1] io_oeb[2] io_oeb[3] io_oeb[4] io_oeb[5]
 + io_oeb[6] io_oeb[7] io_oeb[8] io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[1]
 + io_out[2] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9]
-+ irq[0] irq[1] irq[2] vccd1 vssd1 wb_clk_i wb_rst_i
++ vccd1 vssd1 wb_clk_i wb_rst_i
 .ends
 
 .subckt user_project_wrapper analog_io[0] analog_io[10] analog_io[11] analog_io[12]
@@ -116,7 +116,7 @@ Xmprj io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14] io_in[15] io_in
 + io_in[3] io_in[4] io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oeb[0] io_oeb[10]
 + io_oeb[11] io_oeb[1] io_oeb[2] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7]
 + io_oeb[8] io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[1] io_out[2] io_out[3]
-+ io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9] user_irq[0] user_irq[1]
-+ user_irq[2] vccd1 vssd1 wb_clk_i wb_rst_i user_proj_solar
++ io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9] vccd1 vssd1 wb_clk_i
++ wb_rst_i user_proj_solar
 .ends
 
