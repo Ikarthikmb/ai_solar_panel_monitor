@@ -55,7 +55,7 @@ ai_solar_panel_monitor solar_monitor (
 );
 
 // Define the select_signal
-reg [2:0] select_signal;
+reg [4:0] select_signal;
 wire [11:0] mux5to1_out;
 mux_5to1 display_mux (
 	.clk(wb_clk_i),
@@ -70,14 +70,17 @@ mux_5to1 display_mux (
 );
 
 assign io_out[11:0] = mux5to1_out;
-assign select_signal = 'b1;
-// assign io_oeb = {4{select_signal}};
-assign io_oeb[8:0] = 9'b0;
+assign select_signal = 5'b1;
 
 // Connect the OEB signals to the correct pins on the FPGA or other device.
-assign io_oeb[11] = select_signal[2];
-assign io_oeb[10] = select_signal[1];
-assign io_oeb[9] = select_signal[0];
+// assign io_oeb[13] = select_signal[4];
+// assign io_oeb[12] = select_signal[3];
+// assign io_oeb[11] = select_signal[2];
+// assign io_oeb[10] = select_signal[1];
+// assign io_oeb[9] = select_signal[0];
+// assign io_oeb[8:0] = 9'b0;
+assign io_oeb[8:0] = 9'b0;
+assign io_oeb[11:9] = {{2{1'b0}}, wb_rst_i};
 
 endmodule
 
@@ -85,7 +88,7 @@ module mux_5to1 (
     // Inputs to the MUX
 	input clk,
 	input rst,
-    input [2:0] select,       // 3-bit input to select the desired signal
+    input [4:0] select,       // 3-bit input to select the desired signal
     input [11:0] voltage_display,
     input [11:0] current_display,
     input [11:0] power_display,
@@ -102,11 +105,11 @@ always @(posedge clk or posedge rst) begin
 	if (rst) 
 		mux_out_reg <= 12'b0;
 	else begin case (select)
-        3'b000: mux_out_reg <= voltage_display;
-        3'b001: mux_out_reg <= current_display;
-        3'b010: mux_out_reg <= power_display;
-        3'b011: mux_out_reg <= temperature_display;
-        3'b100: mux_out_reg <= efficiency_display;
+        5'b00001: mux_out_reg <= voltage_display;
+        5'b00010: mux_out_reg <= current_display;
+        5'b00100: mux_out_reg <= power_display;
+        5'b01000: mux_out_reg <= temperature_display;
+        5'b10000: mux_out_reg <= efficiency_display;
         default: mux_out_reg <= voltage_display;  // Default case (can be modified as needed)
     endcase
 	end

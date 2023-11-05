@@ -10,6 +10,7 @@ MACRO user_proj_solar
   PIN io_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 76.200 500.000 76.800 ;
@@ -18,6 +19,7 @@ MACRO user_proj_solar
   PIN io_in[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 0.000 1849.640 4.000 1850.240 ;
@@ -26,6 +28,7 @@ MACRO user_proj_solar
   PIN io_in[11]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 0.000 1323.320 4.000 1323.920 ;
@@ -34,7 +37,6 @@ MACRO user_proj_solar
   PIN io_in[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met3 ;
         RECT 0.000 797.000 4.000 797.600 ;
@@ -43,7 +45,6 @@ MACRO user_proj_solar
   PIN io_in[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met3 ;
         RECT 0.000 621.560 4.000 622.160 ;
@@ -52,7 +53,6 @@ MACRO user_proj_solar
   PIN io_in[14]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met3 ;
         RECT 0.000 446.120 4.000 446.720 ;
@@ -61,7 +61,6 @@ MACRO user_proj_solar
   PIN io_in[15]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.742500 ;
     PORT
       LAYER met3 ;
         RECT 0.000 270.680 4.000 271.280 ;
@@ -70,7 +69,6 @@ MACRO user_proj_solar
   PIN io_in[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.990000 ;
     PORT
       LAYER met3 ;
         RECT 0.000 95.240 4.000 95.840 ;
@@ -79,7 +77,6 @@ MACRO user_proj_solar
   PIN io_in[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.426000 ;
     PORT
       LAYER met2 ;
         RECT 463.770 2996.000 464.050 3000.000 ;
@@ -88,7 +85,6 @@ MACRO user_proj_solar
   PIN io_in[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met2 ;
         RECT 392.470 2996.000 392.750 3000.000 ;
@@ -97,7 +93,6 @@ MACRO user_proj_solar
   PIN io_in[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met2 ;
         RECT 321.170 2996.000 321.450 3000.000 ;
@@ -106,6 +101,7 @@ MACRO user_proj_solar
   PIN io_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 447.480 500.000 448.080 ;
@@ -114,7 +110,6 @@ MACRO user_proj_solar
   PIN io_in[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met2 ;
         RECT 249.870 2996.000 250.150 3000.000 ;
@@ -123,7 +118,6 @@ MACRO user_proj_solar
   PIN io_in[21]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met2 ;
         RECT 178.570 2996.000 178.850 3000.000 ;
@@ -132,7 +126,6 @@ MACRO user_proj_solar
   PIN io_in[22]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.742500 ;
     PORT
       LAYER met2 ;
         RECT 107.270 2996.000 107.550 3000.000 ;
@@ -141,7 +134,6 @@ MACRO user_proj_solar
   PIN io_in[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.742500 ;
     PORT
       LAYER met2 ;
         RECT 35.970 2996.000 36.250 3000.000 ;
@@ -150,6 +142,7 @@ MACRO user_proj_solar
   PIN io_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 818.760 500.000 819.360 ;
@@ -158,6 +151,7 @@ MACRO user_proj_solar
   PIN io_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 1190.040 500.000 1190.640 ;
@@ -166,6 +160,7 @@ MACRO user_proj_solar
   PIN io_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 1561.320 500.000 1561.920 ;
@@ -174,6 +169,7 @@ MACRO user_proj_solar
   PIN io_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 1932.600 500.000 1933.200 ;
@@ -182,6 +178,7 @@ MACRO user_proj_solar
   PIN io_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 2303.880 500.000 2304.480 ;
@@ -190,6 +187,7 @@ MACRO user_proj_solar
   PIN io_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 496.000 2675.160 500.000 2675.760 ;
@@ -198,6 +196,7 @@ MACRO user_proj_solar
   PIN io_in[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met3 ;
         RECT 0.000 2902.280 4.000 2902.880 ;
@@ -206,6 +205,7 @@ MACRO user_proj_solar
   PIN io_in[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
         RECT 0.000 2375.960 4.000 2376.560 ;
@@ -302,6 +302,7 @@ MACRO user_proj_solar
   PIN io_oeb[9]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 2.673000 ;
     PORT
       LAYER met3 ;
         RECT 0.000 2025.080 4.000 2025.680 ;
@@ -474,20 +475,12 @@ MACRO user_proj_solar
       LAYER li1 ;
         RECT 5.520 10.795 494.040 2986.645 ;
       LAYER met1 ;
-        RECT 4.670 10.640 494.040 2986.800 ;
+        RECT 4.670 10.640 494.430 2986.800 ;
       LAYER met2 ;
-        RECT 4.690 2995.720 35.690 2996.490 ;
-        RECT 36.530 2995.720 106.990 2996.490 ;
-        RECT 107.830 2995.720 178.290 2996.490 ;
-        RECT 179.130 2995.720 249.590 2996.490 ;
-        RECT 250.430 2995.720 320.890 2996.490 ;
-        RECT 321.730 2995.720 392.190 2996.490 ;
-        RECT 393.030 2995.720 463.490 2996.490 ;
-        RECT 464.330 2995.720 492.570 2996.490 ;
-        RECT 4.690 4.280 492.570 2995.720 ;
+        RECT 4.690 4.280 494.410 2986.745 ;
         RECT 4.690 4.000 124.470 4.280 ;
         RECT 125.310 4.000 374.250 4.280 ;
-        RECT 375.090 4.000 492.570 4.280 ;
+        RECT 375.090 4.000 494.410 4.280 ;
       LAYER met3 ;
         RECT 3.990 2923.680 496.000 2986.725 ;
         RECT 3.990 2922.280 495.600 2923.680 ;

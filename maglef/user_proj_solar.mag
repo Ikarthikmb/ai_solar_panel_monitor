@@ -1,11 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699205729
+timestamp 1699211058
 << obsli1 >>
 rect 1104 2159 98808 597329
 << obsm1 >>
-rect 934 2128 98808 597360
+rect 934 2128 98886 597360
 << metal2 >>
 rect 7194 599200 7250 600000
 rect 21454 599200 21510 600000
@@ -17,18 +17,10 @@ rect 92754 599200 92810 600000
 rect 24950 0 25006 800
 rect 74906 0 74962 800
 << obsm2 >>
-rect 938 599144 7138 599298
-rect 7306 599144 21398 599298
-rect 21566 599144 35658 599298
-rect 35826 599144 49918 599298
-rect 50086 599144 64178 599298
-rect 64346 599144 78438 599298
-rect 78606 599144 92698 599298
-rect 92866 599144 98514 599298
-rect 938 856 98514 599144
+rect 938 856 98882 597349
 rect 938 800 24894 856
 rect 25062 800 74850 856
-rect 75018 800 98514 856
+rect 75018 800 98882 856
 << metal3 >>
 rect 99200 584536 100000 584656
 rect 0 580456 800 580576
@@ -280,8 +272,8 @@ port 52 nsew signal input
 string FIXED_BBOX 0 0 100000 600000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 16119234
-string GDS_FILE /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/openlane/user_proj_solar/runs/23_11_05_11_32/results/signoff/user_proj_solar.magic.gds
-string GDS_START 142108
+string GDS_END 16058278
+string GDS_FILE /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/openlane/user_proj_solar/runs/23_11_05_13_00/results/signoff/user_proj_solar.magic.gds
+string GDS_START 133612
 << end >>
 
