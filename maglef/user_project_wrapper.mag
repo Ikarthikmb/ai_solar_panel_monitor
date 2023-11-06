@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699223751
+timestamp 1699227931
 << obsli1 >>
 rect 5104 5159 102808 600329
 << obsm1 >>
@@ -3756,8 +3756,8 @@ port 645 nsew signal input
 string FIXED_BBOX 0 0 584000 704000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 17204914
-string GDS_FILE /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/openlane/user_project_wrapper/runs/23_11_05_16_31/results/signoff/user_project_wrapper.magic.gds
-string GDS_START 16057774
+string GDS_END 17205474
+string GDS_FILE /Users/karthikmb/Iceberg-dir/inventory/ikarthikmb-github/ai-design-congest-oct-2023/ai_solar_panel_monitor/openlane/user_project_wrapper/runs/23_11_05_17_42/results/signoff/user_project_wrapper.magic.gds
+string GDS_START 16058334
 << end >>
 

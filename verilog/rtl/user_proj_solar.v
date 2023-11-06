@@ -76,8 +76,9 @@ assign select_signal = 5'b1;
 // assign io_oeb[11] = select_signal[2];
 // assign io_oeb[10] = select_signal[1];
 // assign io_oeb[9] = select_signal[0];
+// assign io_oeb[8:0] = 9'b0;
 assign io_oeb[8:0] = 9'b0;
-assign io_oeb[11:9] = ~select_signal[2:0];
+assign io_oeb[11:9] = {{2{1'b0}}, wb_rst_i};
 
 endmodule
 
